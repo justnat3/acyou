@@ -8,4 +8,4 @@ You can add this to `~/.config/nvim/colors/acyou.vim`
 :color acyou
 ```
 
-![image](https://github.com/justnat3/acyou/assets/58314490/a640d717-42af-4858-aa14-454a9762545d)
+![image](https://github.com/justnat3/acyou/assets/58314490/fb4cbe6f-c4f5-4155-872f-20decda1f7a8)

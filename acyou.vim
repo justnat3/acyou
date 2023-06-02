@@ -1,5 +1,8 @@
 highlight clear
 
+" for cterm, 'black' might get overwritten by the terminal emulator, so we use
+" 232 (#080808), which is close enough.
+
 highlight! Normal guibg=#ffffea guifg=#000000 ctermbg=230 ctermfg=232
 highlight! NonText guibg=bg guifg=#ffffea ctermbg=bg ctermfg=230
 highlight! StatusLine guibg=#aeeeee guifg=#000000 gui=NONE ctermbg=159 ctermfg=232 cterm=NONE
@@ -12,7 +15,8 @@ highlight! Conceal guibg=bg guifg=fg gui=NONE ctermbg=bg ctermfg=fg cterm=NONE
 highlight! LineNr guibg=bg guifg=#505050 gui=italic ctermbg=bg ctermfg=239 cterm=italic
 highlight! Visual guibg=fg guifg=bg ctermbg=fg ctermfg=bg
 highlight! CursorLine guibg=#878787 guifg=fg ctermbg=230 ctermfg=fg
-highlight! CursorColumn guibg=#282828 guifg=fg ctermbg=230 ctermfg=fg
+highlight! CursorColumn term=bold guibg=#282828 guifg=fg ctermbg=230 ctermfg=fg
+highlight! CursorLineNr term=bold ctermfg=DarkRed guifg=DarkRed
 highlight! Pmenu guibg=bg guifg=fg ctermbg=bg ctermfg=fg
 highlight! PmenuSel guibg=fg guifg=bg ctermbg=fg ctermfg=bg
 highlight! Cursor guifg=#1c1c1c guibg=#1c1c1c gui=NONE cterm=NONE
